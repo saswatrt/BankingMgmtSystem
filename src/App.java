@@ -66,10 +66,12 @@ public class App{
                     System.out.println("Verifying Details...");
                     displayCustomerAccountBranch(con);
                     break;
+                case 9:
+                    break;
                 default:
                     System.out.println("Invalid Input");
                 }
-            }while(choice>0);
+            }while(choice!=9);
         }
         catch (SQLException e) {
             System.err.println("Database error: " + e.getMessage());
